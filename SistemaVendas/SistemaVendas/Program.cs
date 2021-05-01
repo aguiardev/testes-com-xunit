@@ -6,7 +6,8 @@ namespace SistemaVendas
     {
         static void Main(string[] args)
         {
-            var valorMediaMensal = new VendasNegocio().CalcularMediaMensal(04, 2021);
+            var valorMediaMensal = new VendasNegocio(new VendasRepositorio()).CalcularMediaMensal(04, 2021);
+            
             Console.WriteLine($"Valor Médio de Vendas no Mês: {valorMediaMensal}");
         }
     }

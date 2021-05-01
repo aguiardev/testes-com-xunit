@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace SistemaVendas
 {
-    public class VendasRepositorio
+    public class VendasRepositorio : IVendasRepositorio
     {
         public IList<Vendas> BuscarVendas(short mes, short ano)
         {
@@ -13,16 +13,6 @@ namespace SistemaVendas
                 {
                     Data = new DateTime(2021, 04, 02),
                     Valor = 500.00m
-                },
-                new Vendas
-                {
-                    Data = new DateTime(2021, 04, 05),
-                    Valor = 50.00m
-                },
-                new Vendas
-                {
-                    Data = new DateTime(2021, 04, 10),
-                    Valor = 353.10m
                 }
             };
         }
