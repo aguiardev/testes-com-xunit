@@ -8,7 +8,7 @@ namespace SistemaVendas.TestesUnitarios
         [Fact]
         public void Test1()
         {
-
+            
         }
     }
 }

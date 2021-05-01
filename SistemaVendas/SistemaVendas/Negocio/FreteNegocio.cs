@@ -2,7 +2,7 @@ namespace SistemaVendas
 {
     public class FreteNegocio
     {
-        public decimal CalcularFrente(int distanciaKm)
+        public decimal CalcularFrete(int distanciaKm)
         {
             if (distanciaKm <= 5)
             {
